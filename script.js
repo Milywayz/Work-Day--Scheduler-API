@@ -1,44 +1,17 @@
 // Wrap all code that interacts with the DOM in a call to jQuery to ensure that
 // the code isn't run until the browser has finished rendering all the elements
 // in the html.
-let nineT = $('textarea[data="9"]')
-let nineB = $('button[data="9"]')
-let nineI = $('i[data="9"]')
+let nineT = $('textarea[data-time="9"]')
+let nineB = $('button[data-time="9"]')
+let nineI = $('i[data-time="9"]')
 let nineHour = $('#hour-9')
-let tenT = $('textarea[data="10"]')
-let tenB = $('button[data="10"]')
-let tenI = $('i[data="10"]')
+let tenT = $('textarea[data-time="10"]')
+let tenB = $('button[data-time="10"]')
+let tenI = $('i[data-time="10"]')
 let tenHour = $('#hour-10')
 
-$(function () {
-
-    nineB.on('click', function (){
-
-        localStorage.getItem("nineT")
 
 
-    })
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-});
 
 // TODO: Add a listener for click events on the save button. This code should
 // use the id in the containing time-block as a key to save the user input in
