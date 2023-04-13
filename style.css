@@ -1,8 +1,9 @@
+/* General CSS Styling */
 body {
   font-family: 'Open Sans', sans-serif;
   font-size: 16px;
 }
-
+/* Text Row Styling */
 textarea {
   background: transparent;
   border: none;
@@ -44,7 +45,7 @@ textarea {
   background-color: #77dd77;
   color: white;
 }
-
+/* Button Styling */
 .saveBtn {
   border-left: 1px solid black;
   border-top-right-radius: 15px;
