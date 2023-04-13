@@ -54,272 +54,276 @@ let savI5 = document.querySelector('i[data-time="5"]')
 let hour5 = document.querySelector('#hour-5')
 
 let todaysDate = document.querySelector('#currentDay')
+let currentTime = dayjs().hour() 
 
 // Showing the current day in header
 todaysDate.textContent = dayjs().format('MMM DD, YYYY')
 
 
+
+
 // Changing 9am row to correct color depending on the time of day
-if (parseInt(document.querySelectorAll(".row")[0].dataset.time) < dayjs().hour()){
+if (parseInt(document.querySelectorAll(".row")[0].dataset.time) < currentTime) {
 
     hour9.classList.add("past")
 }
-if (parseInt(document.querySelectorAll(".row")[0].dataset.time) === dayjs().hour()){
+else if (parseInt(document.querySelectorAll(".row")[0].dataset.time) === currentTime) {
 
     hour9.classList.add("present")
 }
-else{
+else {
 
     hour9.classList.add("future")
 }
 
 // Changing 10am row to correct color depending on the time of day
-if (parseInt(document.querySelectorAll(".row")[1].dataset.time) < dayjs().hour()){
+if (parseInt(document.querySelectorAll(".row")[1].dataset.time) < currentTime) {
 
     hour10.classList.add("past")
 }
-if (parseInt(document.querySelectorAll(".row")[1].dataset.time) === dayjs().hour()){
+else if (parseInt(document.querySelectorAll(".row")[1].dataset.time) === currentTime) {
 
     hour10.classList.add("present")
 }
-else{
+else {
 
     hour10.classList.add("future")
 }
 
 // Changing 11am row to correct color depending on the time of day
-if (parseInt(document.querySelectorAll(".row")[2].dataset.time) < dayjs().hour()){
+if (parseInt(document.querySelectorAll(".row")[2].dataset.time) < currentTime) {
 
     hour11.classList.add("past")
 }
-if (parseInt(document.querySelectorAll(".row")[2].dataset.time) === dayjs().hour()){
+else if (parseInt(document.querySelectorAll(".row")[2].dataset.time) === currentTime) {
 
     hour11.classList.add("present")
 }
-else{
+else {
 
     hour11.classList.add("future")
 }
 
 // Changing 12pm row to correct color depending on the time of day
-if (parseInt(document.querySelectorAll(".row")[3].dataset.time) < dayjs().hour()){
+if (parseInt(document.querySelectorAll(".row")[3].dataset.time) < currentTime) {
 
     hour12.classList.add("past")
 }
-if (parseInt(document.querySelectorAll(".row")[3].dataset.time) === dayjs().hour()){
+else if (parseInt(document.querySelectorAll(".row")[3].dataset.time) === currentTime) {
 
     hour12.classList.add("present")
 }
-else{
+else {
 
     hour12.classList.add("future")
 }
 
 // Changing 1pm row to correct color depending on the time of day
-if (parseInt(document.querySelectorAll(".row")[4].dataset.time) < dayjs().hour()){
+if (13 < currentTime) {
 
     hour1.classList.add("past")
 }
-if (parseInt(document.querySelectorAll(".row")[4].dataset.time) === dayjs().hour()){
+
+else if (13 === currentTime) {
 
     hour1.classList.add("present")
 }
-else{
+else {
 
     hour1.classList.add("future")
 }
 
 // Changing 2pm row to correct color depending on the time of day
-if (parseInt(document.querySelectorAll(".row")[5].dataset.time) < dayjs().hour()){
+if (14 < currentTime) {
 
     hour2.classList.add("past")
 }
-if (parseInt(document.querySelectorAll(".row")[5].dataset.time) === dayjs().hour()){
+else if (14 === currentTime) {
 
     hour2.classList.add("present")
 }
-else{
+else {
 
     hour2.classList.add("future")
 }
 
 // Changing 3pm row to correct color depending on the time of day
-if (parseInt(document.querySelectorAll(".row")[6].dataset.time) < dayjs().hour()){
+if (15 < currentTime) {
 
     hour3.classList.add("past")
 }
-if (parseInt(document.querySelectorAll(".row")[6].dataset.time) === dayjs().hour()){
+else if (15 === currentTime) {
 
     hour3.classList.add("present")
 }
-else{
+else {
 
     hour3.classList.add("future")
 }
 
 // Changing 4pm row to correct color depending on the time of day
-if (parseInt(document.querySelectorAll(".row")[7].dataset.time) < dayjs().hour()){
+if (16 < currentTime) {
 
     hour4.classList.add("past")
 }
-if (parseInt(document.querySelectorAll(".row")[7].dataset.time) === dayjs().hour()){
+else if (16 === currentTime) {
 
     hour4.classList.add("present")
 }
-else{
+else {
 
     hour4.classList.add("future")
 }
 
 // Changing 5pm row to correct color depending on the time of day
-if (parseInt(document.querySelectorAll(".row")[8].dataset.time) < dayjs().hour()){
+if (17 < currentTime) {
 
     hour5.classList.add("past")
 }
-if (parseInt(document.querySelectorAll(".row")[8].dataset.time) === dayjs().hour()){
+else if (17 === currentTime) {
 
     hour5.classList.add("present")
 }
-else{
+else {
 
     hour5.classList.add("future")
 }
 
 // Save text in textarea with the correct button and i tags
-saveButton9.addEventListener ("click" , function(event){
-    
+saveButton9.addEventListener("click", function (event) {
+
     event.preventDefault()
-   let inputText9 = text9.value;
-   localStorage.setItem("savedText9", inputText9)
+    let inputText9 = text9.value;
+    localStorage.setItem("savedText9", inputText9)
 })
-savI9.addEventListener ("click" , function(event){
-    
+savI9.addEventListener("click", function (event) {
+
     event.preventDefault()
-   let inputText9 = text9.value;
-   localStorage.setItem("savedText9", inputText9)
+    let inputText9 = text9.value;
+    localStorage.setItem("savedText9", inputText9)
 })
-saveButton10.addEventListener("click" , function(event){
-    
+saveButton10.addEventListener("click", function (event) {
+
     event.preventDefault()
-   let inputText10 = text10.value;
-   localStorage.setItem("savedText10", inputText10)
+    let inputText10 = text10.value;
+    localStorage.setItem("savedText10", inputText10)
 })
-savI10.addEventListener ("click" , function(event){
-    
+savI10.addEventListener("click", function (event) {
+
     event.preventDefault()
-   let inputText9 = text9.value;
-   localStorage.setItem("savedText9", inputText9)
+    let inputText9 = text9.value;
+    localStorage.setItem("savedText10", inputText9)
 })
-saveButton11.addEventListener("click" , function(event){
-    
+saveButton11.addEventListener("click", function (event) {
+
     event.preventDefault()
-   let inputText11 = text11.value;
-   localStorage.setItem("savedText11", inputText11)
+    let inputText11 = text11.value;
+    localStorage.setItem("savedText11", inputText11)
 })
-savI11.addEventListener ("click" , function(event){
-    
+savI11.addEventListener("click", function (event) {
+
     event.preventDefault()
-   let inputText9 = text9.value;
-   localStorage.setItem("savedText9", inputText9)
+    let inputText9 = text9.value;
+    localStorage.setItem("savedText11", inputText9)
 })
-saveButton12.addEventListener("click" , function(event){
-    
+saveButton12.addEventListener("click", function (event) {
+
     event.preventDefault()
-   let inputText12 = text12.value;
-   localStorage.setItem("savedText12", inputText12)
+    let inputText12 = text12.value;
+    localStorage.setItem("savedText12", inputText12)
 })
-savI12.addEventListener ("click" , function(event){
-    
+savI12.addEventListener("click", function (event) {
+
     event.preventDefault()
-   let inputText9 = text9.value;
-   localStorage.setItem("savedText9", inputText9)
+    let inputText9 = text9.value;
+    localStorage.setItem("savedText12", inputText9)
 })
-saveButton1.addEventListener("click" , function(event){
-    
+saveButton1.addEventListener("click", function (event) {
+
     event.preventDefault()
-   let inputText1 = text1.value;
-   localStorage.setItem("savedText1", inputText1)
+    let inputText1 = text1.value;
+    localStorage.setItem("savedText1", inputText1)
 })
-savI1.addEventListener ("click" , function(event){
-    
+savI1.addEventListener("click", function (event) {
+
     event.preventDefault()
-   let inputText9 = text9.value;
-   localStorage.setItem("savedText9", inputText9)
+    let inputText9 = text9.value;
+    localStorage.setItem("savedText1", inputText9)
 })
-saveButton2.addEventListener("click" , function(event){
-    
+saveButton2.addEventListener("click", function (event) {
+
     event.preventDefault()
-   let inputText2 = text2.value;
-   localStorage.setItem("savedText2", inputText2)
+    let inputText2 = text2.value;
+    localStorage.setItem("savedText2", inputText2)
 })
-savI2.addEventListener ("click" , function(event){
-    
+savI2.addEventListener("click", function (event) {
+
     event.preventDefault()
-   let inputText9 = text9.value;
-   localStorage.setItem("savedText9", inputText9)
+    let inputText9 = text9.value;
+    localStorage.setItem("savedText2", inputText9)
 })
-saveButton3.addEventListener("click" , function(event){
-    
+saveButton3.addEventListener("click", function (event) {
+
     event.preventDefault()
-   let inputText3 = text3.value;
-   localStorage.setItem("savedText3", inputText3)
+    let inputText3 = text3.value;
+    localStorage.setItem("savedText3", inputText3)
 })
-savI3.addEventListener ("click" , function(event){
-    
+savI3.addEventListener("click", function (event) {
+
     event.preventDefault()
-   let inputText9 = text9.value;
-   localStorage.setItem("savedText9", inputText9)
+    let inputText9 = text9.value;
+    localStorage.setItem("savedText3", inputText9)
 })
-saveButton4.addEventListener("click" , function(event){
-    
+saveButton4.addEventListener("click", function (event) {
+
     event.preventDefault()
-   let inputText4 = text4.value;
-   localStorage.setItem("savedText4", inputText4)
+    let inputText4 = text4.value;
+    localStorage.setItem("savedText4", inputText4)
 })
-savI4.addEventListener ("click" , function(event){
-    
+savI4.addEventListener("click", function (event) {
+
     event.preventDefault()
-   let inputText9 = text9.value;
-   localStorage.setItem("savedText9", inputText9)
+    let inputText9 = text9.value;
+    localStorage.setItem("savedText4", inputText9)
 })
-saveButton5.addEventListener("click" , function(event){
-    
+saveButton5.addEventListener("click", function (event) {
+
     event.preventDefault()
-   let inputText5 = text5.value;
-   localStorage.setItem("savedText5", inputText5)
+    let inputText5 = text5.value;
+    localStorage.setItem("savedText5", inputText5)
 })
-savI5.addEventListener ("click" , function(event){
-    
+savI5.addEventListener("click", function (event) {
+
     event.preventDefault()
-   let inputText9 = text9.value;
-   localStorage.setItem("savedText9", inputText9)
+    let inputText9 = text9.value;
+    localStorage.setItem("savedText5", inputText9)
 })
 
 // Putting the text on the page after saving
-if (savedText9){
+if (savedText9) {
     text9.value = savedText9;
 }
-if (savedText10){
+if (savedText10) {
     text10.value = savedText10;
 }
-if (savedText11){
+if (savedText11) {
     text11.value = savedText11;
 }
-if (savedText12){
+if (savedText12) {
     text12.value = savedText12;
 }
-if (savedText1){
+if (savedText1) {
     text1.value = savedText1;
 }
-if (savedText2){
+if (savedText2) {
     text2.value = savedText2;
 }
-if (savedText3){
+if (savedText3) {
     text3.value = savedText3;
 }
-if (savedText4){
+if (savedText4) {
     text4.value = savedText4;
 }
-if (savedText5){
+if (savedText5) {
     text5.value = savedText5;
 }
