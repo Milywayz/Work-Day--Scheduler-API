@@ -211,8 +211,8 @@ saveButton10.addEventListener("click", function (event) {
 savI10.addEventListener("click", function (event) {
 
     event.preventDefault()
-    let inputText9 = text9.value;
-    localStorage.setItem("savedText10", inputText9)
+    let inputText10 = text10inputText10.value;
+    localStorage.setItem("savedText10", inputText10)
 })
 saveButton11.addEventListener("click", function (event) {
 
@@ -223,8 +223,8 @@ saveButton11.addEventListener("click", function (event) {
 savI11.addEventListener("click", function (event) {
 
     event.preventDefault()
-    let inputText9 = text9.value;
-    localStorage.setItem("savedText11", inputText9)
+    let inputText11 = text11.value;
+    localStorage.setItem("savedText11", inputText11)
 })
 saveButton12.addEventListener("click", function (event) {
 
@@ -235,8 +235,8 @@ saveButton12.addEventListener("click", function (event) {
 savI12.addEventListener("click", function (event) {
 
     event.preventDefault()
-    let inputText9 = text9.value;
-    localStorage.setItem("savedText12", inputText9)
+    let inputText12 = text12.value;
+    localStorage.setItem("savedText12", inputText12)
 })
 saveButton1.addEventListener("click", function (event) {
 
@@ -247,8 +247,8 @@ saveButton1.addEventListener("click", function (event) {
 savI1.addEventListener("click", function (event) {
 
     event.preventDefault()
-    let inputText9 = text9.value;
-    localStorage.setItem("savedText1", inputText9)
+    let inputText1 = text1.value;
+    localStorage.setItem("savedText1", inputText1)
 })
 saveButton2.addEventListener("click", function (event) {
 
@@ -259,8 +259,8 @@ saveButton2.addEventListener("click", function (event) {
 savI2.addEventListener("click", function (event) {
 
     event.preventDefault()
-    let inputText9 = text9.value;
-    localStorage.setItem("savedText2", inputText9)
+    let inputText2 = text2.value;
+    localStorage.setItem("savedText2", inputText2)
 })
 saveButton3.addEventListener("click", function (event) {
 
@@ -271,8 +271,8 @@ saveButton3.addEventListener("click", function (event) {
 savI3.addEventListener("click", function (event) {
 
     event.preventDefault()
-    let inputText9 = text9.value;
-    localStorage.setItem("savedText3", inputText9)
+    let inputText3 = text3.value;
+    localStorage.setItem("savedText3", inputText3)
 })
 saveButton4.addEventListener("click", function (event) {
 
@@ -283,8 +283,8 @@ saveButton4.addEventListener("click", function (event) {
 savI4.addEventListener("click", function (event) {
 
     event.preventDefault()
-    let inputText9 = text9.value;
-    localStorage.setItem("savedText4", inputText9)
+    let inputText4 = text4.value;
+    localStorage.setItem("savedText4", inputText4)
 })
 saveButton5.addEventListener("click", function (event) {
 
@@ -295,8 +295,8 @@ saveButton5.addEventListener("click", function (event) {
 savI5.addEventListener("click", function (event) {
 
     event.preventDefault()
-    let inputText9 = text9.value;
-    localStorage.setItem("savedText5", inputText9)
+    let inputText5 = text5.value;
+    localStorage.setItem("savedText5", inputText5)
 })
 
 // Putting the text on the page after saving
