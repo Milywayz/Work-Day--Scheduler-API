@@ -1,16 +1,127 @@
 // Wrap all code that interacts with the DOM in a call to jQuery to ensure that
 // the code isn't run until the browser has finished rendering all the elements
 // in the html.
-let nineT = $('textarea[data-time="9"]')
-let nineB = $('button[data-time="9"]')
-let nineI = $('i[data-time="9"]')
-let nineHour = $('#hour-9')
-let tenT = $('textarea[data-time="10"]')
-let tenB = $('button[data-time="10"]')
-let tenI = $('i[data-time="10"]')
-let tenHour = $('#hour-10')
+let saveButton9 = document.querySelector('.saveBtn[data-time="9"]')
+let text9 = document.querySelector('textarea[data-time="9"]')
+let savedText9 = localStorage.getItem("savedText9");
+let savI = document.querySelector('i[data-time="9"]')
+
+let saveButton10 = document.querySelector('.saveBtn[data-time="10"]')
+let text10 = document.querySelector('textarea[data-time="10"]')
+let savedText10 = localStorage.getItem("savedText10");
+
+let saveButton11 = document.querySelector('.saveBtn[data-time="11"]')
+let text11 = document.querySelector('textarea[data-time="11"]')
+let savedText11 = localStorage.getItem("savedText11");
+
+let saveButton12 = document.querySelector('.saveBtn[data-time="12"]')
+let text12 = document.querySelector('textarea[data-time="12"]')
+let savedText12 = localStorage.getItem("savedText12");
+
+let saveButton1 = document.querySelector('.saveBtn[data-time="1"]')
+let text1 = document.querySelector('textarea[data-time="1"]')
+let savedText1 = localStorage.getItem("savedText1");
+
+let saveButton2 = document.querySelector('.saveBtn[data-time="2"]')
+let text2 = document.querySelector('textarea[data-time="2"]')
+let savedText2 = localStorage.getItem("savedText2");
+
+let saveButton3 = document.querySelector('.saveBtn[data-time="3"]')
+let text3 = document.querySelector('textarea[data-time="3"]')
+let savedText3 = localStorage.getItem("savedText3");
+
+let saveButton4 = document.querySelector('.saveBtn[data-time="4"]')
+let text4 = document.querySelector('textarea[data-time="4"]')
+let savedText4 = localStorage.getItem("savedText4");
+
+let saveButton5 = document.querySelector('.saveBtn[data-time="5"]')
+let text5 = document.querySelector('textarea[data-time="5"]')
+let savedText5 = localStorage.getItem("savedText5");
 
 
+
+saveButton9.addEventListener ("click" , function(event){
+    
+    event.preventDefault()
+   let inputText9 = text9.value;
+   localStorage.setItem("savedText9", inputText9)
+})
+saveButton10.addEventListener("click" , function(event){
+    
+    event.preventDefault()
+   let inputText10 = text10.value;
+   localStorage.setItem("savedText10", inputText10)
+})
+saveButton11.addEventListener("click" , function(event){
+    
+    event.preventDefault()
+   let inputText11 = text11.value;
+   localStorage.setItem("savedText11", inputText11)
+})
+saveButton12.addEventListener("click" , function(event){
+    
+    event.preventDefault()
+   let inputText12 = text12.value;
+   localStorage.setItem("savedText12", inputText12)
+})
+saveButton1.addEventListener("click" , function(event){
+    
+    event.preventDefault()
+   let inputText1 = text1.value;
+   localStorage.setItem("savedText1", inputText1)
+})
+saveButton2.addEventListener("click" , function(event){
+    
+    event.preventDefault()
+   let inputText2 = text2.value;
+   localStorage.setItem("savedText2", inputText2)
+})
+saveButton3.addEventListener("click" , function(event){
+    
+    event.preventDefault()
+   let inputText3 = text3.value;
+   localStorage.setItem("savedText3", inputText3)
+})
+saveButton4.addEventListener("click" , function(event){
+    
+    event.preventDefault()
+   let inputText4 = text4.value;
+   localStorage.setItem("savedText4", inputText4)
+})
+saveButton5.addEventListener("click" , function(event){
+    
+    event.preventDefault()
+   let inputText5 = text5.value;
+   localStorage.setItem("savedText5", inputText5)
+})
+
+if (savedText9){
+    text9.value = savedText9;
+}
+if (savedText10){
+    text10.value = savedText10;
+}
+if (savedText11){
+    text11.value = savedText11;
+}
+if (savedText12){
+    text12.value = savedText12;
+}
+if (savedText1){
+    text1.value = savedText1;
+}
+if (savedText2){
+    text2.value = savedText2;
+}
+if (savedText3){
+    text3.value = savedText3;
+}
+if (savedText4){
+    text4.value = savedText4;
+}
+if (savedText5){
+    text5.value = savedText5;
+}
 
 
 // TODO: Add a listener for click events on the save button. This code should
