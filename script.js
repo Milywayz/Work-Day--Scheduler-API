@@ -64,7 +64,7 @@ if (parseInt(document.querySelectorAll(".row")[0].dataset.time) < dayjs().hour()
 
     hour9.classList.add("past")
 }
-else if (parseInt(document.querySelectorAll(".row")[0].dataset.time) = dayjs().hour()){
+if (parseInt(document.querySelectorAll(".row")[0].dataset.time) === dayjs().hour()){
 
     hour9.classList.add("present")
 }
@@ -78,7 +78,7 @@ if (parseInt(document.querySelectorAll(".row")[1].dataset.time) < dayjs().hour()
 
     hour10.classList.add("past")
 }
-else if (parseInt(document.querySelectorAll(".row")[1].dataset.time) = dayjs().hour()){
+if (parseInt(document.querySelectorAll(".row")[1].dataset.time) === dayjs().hour()){
 
     hour10.classList.add("present")
 }
@@ -92,7 +92,7 @@ if (parseInt(document.querySelectorAll(".row")[2].dataset.time) < dayjs().hour()
 
     hour11.classList.add("past")
 }
-else if (parseInt(document.querySelectorAll(".row")[2].dataset.time) = dayjs().hour()){
+if (parseInt(document.querySelectorAll(".row")[2].dataset.time) === dayjs().hour()){
 
     hour11.classList.add("present")
 }
@@ -106,7 +106,7 @@ if (parseInt(document.querySelectorAll(".row")[3].dataset.time) < dayjs().hour()
 
     hour12.classList.add("past")
 }
-else if (parseInt(document.querySelectorAll(".row")[3].dataset.time) = dayjs().hour()){
+if (parseInt(document.querySelectorAll(".row")[3].dataset.time) === dayjs().hour()){
 
     hour12.classList.add("present")
 }
@@ -120,7 +120,7 @@ if (parseInt(document.querySelectorAll(".row")[4].dataset.time) < dayjs().hour()
 
     hour1.classList.add("past")
 }
-else if (parseInt(document.querySelectorAll(".row")[4].dataset.time) = dayjs().hour()){
+if (parseInt(document.querySelectorAll(".row")[4].dataset.time) === dayjs().hour()){
 
     hour1.classList.add("present")
 }
@@ -134,7 +134,7 @@ if (parseInt(document.querySelectorAll(".row")[5].dataset.time) < dayjs().hour()
 
     hour2.classList.add("past")
 }
-else if (parseInt(document.querySelectorAll(".row")[5].dataset.time) = dayjs().hour()){
+if (parseInt(document.querySelectorAll(".row")[5].dataset.time) === dayjs().hour()){
 
     hour2.classList.add("present")
 }
@@ -148,7 +148,7 @@ if (parseInt(document.querySelectorAll(".row")[6].dataset.time) < dayjs().hour()
 
     hour3.classList.add("past")
 }
-else if (parseInt(document.querySelectorAll(".row")[6].dataset.time) = dayjs().hour()){
+if (parseInt(document.querySelectorAll(".row")[6].dataset.time) === dayjs().hour()){
 
     hour3.classList.add("present")
 }
@@ -162,7 +162,7 @@ if (parseInt(document.querySelectorAll(".row")[7].dataset.time) < dayjs().hour()
 
     hour4.classList.add("past")
 }
-else if (parseInt(document.querySelectorAll(".row")[7].dataset.time) = dayjs().hour()){
+if (parseInt(document.querySelectorAll(".row")[7].dataset.time) === dayjs().hour()){
 
     hour4.classList.add("present")
 }
@@ -176,7 +176,7 @@ if (parseInt(document.querySelectorAll(".row")[8].dataset.time) < dayjs().hour()
 
     hour5.classList.add("past")
 }
-else if (parseInt(document.querySelectorAll(".row")[8].dataset.time) = dayjs().hour()){
+if (parseInt(document.querySelectorAll(".row")[8].dataset.time) === dayjs().hour()){
 
     hour5.classList.add("present")
 }
