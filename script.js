@@ -1,3 +1,4 @@
+// QuerySelector for variables
 let saveButton9 = document.querySelector('.saveBtn[data-time="9"]')
 let text9 = document.querySelector('textarea[data-time="9"]')
 let savedText9 = localStorage.getItem("savedText9");
@@ -54,10 +55,11 @@ let hour5 = document.querySelector('#hour-5')
 
 let todaysDate = document.querySelector('#currentDay')
 
+// Showing the current day in header
 todaysDate.textContent = dayjs().format('MMM DD, YYYY')
 
 
-
+// Changing 9am row to correct color depending on the time of day
 if (parseInt(document.querySelectorAll(".row")[0].dataset.time) < dayjs().hour()){
 
     hour9.classList.add("past")
@@ -71,7 +73,7 @@ else if (parseInt(document.querySelectorAll(".row")[0].dataset.time) > dayjs().h
     hour9.classList.add("future")
 }
 
-
+// Changing 10am row to correct color depending on the time of day
 if (parseInt(document.querySelectorAll(".row")[1].dataset.time) < dayjs().hour()){
 
     hour10.classList.add("past")
@@ -85,6 +87,7 @@ else if (parseInt(document.querySelectorAll(".row")[1].dataset.time) > dayjs().h
     hour10.classList.add("future")
 }
 
+// Changing 11am row to correct color depending on the time of day
 if (parseInt(document.querySelectorAll(".row")[2].dataset.time) < dayjs().hour()){
 
     hour11.classList.add("past")
@@ -98,6 +101,7 @@ else if (parseInt(document.querySelectorAll(".row")[2].dataset.time) > dayjs().h
     hour11.classList.add("future")
 }
 
+// Changing 12pm row to correct color depending on the time of day
 if (parseInt(document.querySelectorAll(".row")[3].dataset.time) < dayjs().hour()){
 
     hour12.classList.add("past")
@@ -111,6 +115,7 @@ else if (parseInt(document.querySelectorAll(".row")[3].dataset.time) > dayjs().h
     hour12.classList.add("future")
 }
 
+// Changing 1pm row to correct color depending on the time of day
 if (parseInt(document.querySelectorAll(".row")[4].dataset.time) < dayjs().hour()){
 
     hour1.classList.add("past")
@@ -124,6 +129,7 @@ else if (parseInt(document.querySelectorAll(".row")[4].dataset.time) > dayjs().h
     hour1.classList.add("future")
 }
 
+// Changing 2pm row to correct color depending on the time of day
 if (parseInt(document.querySelectorAll(".row")[5].dataset.time) < dayjs().hour()){
 
     hour2.classList.add("past")
@@ -137,6 +143,7 @@ else if (parseInt(document.querySelectorAll(".row")[5].dataset.time) > dayjs().h
     hour2.classList.add("future")
 }
 
+// Changing 3pm row to correct color depending on the time of day
 if (parseInt(document.querySelectorAll(".row")[6].dataset.time) < dayjs().hour()){
 
     hour3.classList.add("past")
@@ -150,6 +157,7 @@ else if (parseInt(document.querySelectorAll(".row")[6].dataset.time) > dayjs().h
     hour3.classList.add("future")
 }
 
+// Changing 4pm row to correct color depending on the time of day
 if (parseInt(document.querySelectorAll(".row")[7].dataset.time) < dayjs().hour()){
 
     hour4.classList.add("past")
@@ -163,7 +171,7 @@ else if (parseInt(document.querySelectorAll(".row")[7].dataset.time) > dayjs().h
     hour4.classList.add("future")
 }
 
-
+// Changing 5pm row to correct color depending on the time of day
 if (parseInt(document.querySelectorAll(".row")[8].dataset.time) < dayjs().hour()){
 
     hour5.classList.add("past")
@@ -177,6 +185,7 @@ else if (parseInt(document.querySelectorAll(".row")[8].dataset.time) > dayjs().h
     hour5.classList.add("future")
 }
 
+// Save text in textarea with the correct button and i tags
 saveButton9.addEventListener ("click" , function(event){
     
     event.preventDefault()
@@ -286,6 +295,7 @@ savI5.addEventListener ("click" , function(event){
    localStorage.setItem("savedText9", inputText9)
 })
 
+// Putting the text on the page after saving
 if (savedText9){
     text9.value = savedText9;
 }
