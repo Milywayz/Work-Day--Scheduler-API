@@ -5,6 +5,7 @@ let saveButton9 = document.querySelector('.saveBtn[data-time="9"]')
 let text9 = document.querySelector('textarea[data-time="9"]')
 let savedText9 = localStorage.getItem("savedText9");
 let savI9 = document.querySelector('i[data-time="9"]')
+let hour9 = document.querySelector('#hour-9')
 
 let saveButton10 = document.querySelector('.saveBtn[data-time="10"]')
 let text10 = document.querySelector('textarea[data-time="10"]')
@@ -45,6 +46,12 @@ let saveButton5 = document.querySelector('.saveBtn[data-time="5"]')
 let text5 = document.querySelector('textarea[data-time="5"]')
 let savedText5 = localStorage.getItem("savedText5");
 let savI5 = document.querySelector('i[data-time="5"]')
+
+let todaysDate = document.querySelector('#currentDay')
+
+todaysDate.textContent = dayjs().format('MMM DD, YYYY')
+
+
 
 
 
