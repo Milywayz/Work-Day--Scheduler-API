@@ -11,41 +11,49 @@ let saveButton10 = document.querySelector('.saveBtn[data-time="10"]')
 let text10 = document.querySelector('textarea[data-time="10"]')
 let savedText10 = localStorage.getItem("savedText10");
 let savI10 = document.querySelector('i[data-time="10"]')
+let hour10 = document.querySelector('#hour-10')
 
 let saveButton11 = document.querySelector('.saveBtn[data-time="11"]')
 let text11 = document.querySelector('textarea[data-time="11"]')
 let savedText11 = localStorage.getItem("savedText11");
 let savI11 = document.querySelector('i[data-time="11"]')
+let hour11 = document.querySelector('#hour-11')
 
 let saveButton12 = document.querySelector('.saveBtn[data-time="12"]')
 let text12 = document.querySelector('textarea[data-time="12"]')
 let savedText12 = localStorage.getItem("savedText12");
 let savI12 = document.querySelector('i[data-time="12"]')
+let hour12 = document.querySelector('#hour-12')
 
 let saveButton1 = document.querySelector('.saveBtn[data-time="1"]')
 let text1 = document.querySelector('textarea[data-time="1"]')
 let savedText1 = localStorage.getItem("savedText1");
 let savI1 = document.querySelector('i[data-time="1"]')
+let hour1 = document.querySelector('#hour-1')
 
 let saveButton2 = document.querySelector('.saveBtn[data-time="2"]')
 let text2 = document.querySelector('textarea[data-time="2"]')
 let savedText2 = localStorage.getItem("savedText2");
 let savI2 = document.querySelector('i[data-time="2"]')
+let hour2 = document.querySelector('#hour-2')
 
 let saveButton3 = document.querySelector('.saveBtn[data-time="3"]')
 let text3 = document.querySelector('textarea[data-time="3"]')
 let savedText3 = localStorage.getItem("savedText3");
 let savI3 = document.querySelector('i[data-time="3"]')
+let hour3 = document.querySelector('#hour-3')
 
 let saveButton4 = document.querySelector('.saveBtn[data-time="4"]')
 let text4 = document.querySelector('textarea[data-time="4"]')
 let savedText4 = localStorage.getItem("savedText4");
 let savI4 = document.querySelector('i[data-time="4"]')
+let hour4 = document.querySelector('#hour-4')
 
 let saveButton5 = document.querySelector('.saveBtn[data-time="5"]')
 let text5 = document.querySelector('textarea[data-time="5"]')
 let savedText5 = localStorage.getItem("savedText5");
 let savI5 = document.querySelector('i[data-time="5"]')
+let hour5 = document.querySelector('#hour-5')
 
 let todaysDate = document.querySelector('#currentDay')
 
@@ -53,7 +61,124 @@ todaysDate.textContent = dayjs().format('MMM DD, YYYY')
 
 
 
+if (parseInt(document.querySelectorAll(".row")[0].dataset.time) < dayjs().hour()){
 
+    hour9.classList.add("past")
+}
+else if (parseInt(document.querySelectorAll(".row")[0].dataset.time) = dayjs().hour()){
+
+    hour9.classList.add("present")
+}
+else if (parseInt(document.querySelectorAll(".row")[0].dataset.time) > dayjs().hour()){
+
+    hour9.classList.add("future")
+}
+
+
+if (parseInt(document.querySelectorAll(".row")[1].dataset.time) < dayjs().hour()){
+
+    hour10.classList.add("past")
+}
+else if (parseInt(document.querySelectorAll(".row")[1].dataset.time) = dayjs().hour()){
+
+    hour10.classList.add("present")
+}
+else if (parseInt(document.querySelectorAll(".row")[1].dataset.time) > dayjs().hour()){
+
+    hour10.classList.add("future")
+}
+
+if (parseInt(document.querySelectorAll(".row")[2].dataset.time) < dayjs().hour()){
+
+    hour11.classList.add("past")
+}
+else if (parseInt(document.querySelectorAll(".row")[2].dataset.time) = dayjs().hour()){
+
+    hour11.classList.add("present")
+}
+else if (parseInt(document.querySelectorAll(".row")[2].dataset.time) > dayjs().hour()){
+
+    hour11.classList.add("future")
+}
+
+if (parseInt(document.querySelectorAll(".row")[3].dataset.time) < dayjs().hour()){
+
+    hour12.classList.add("past")
+}
+else if (parseInt(document.querySelectorAll(".row")[3].dataset.time) = dayjs().hour()){
+
+    hour12.classList.add("present")
+}
+else if (parseInt(document.querySelectorAll(".row")[3].dataset.time) > dayjs().hour()){
+
+    hour12.classList.add("future")
+}
+
+if (parseInt(document.querySelectorAll(".row")[4].dataset.time) < dayjs().hour()){
+
+    hour1.classList.add("past")
+}
+else if (parseInt(document.querySelectorAll(".row")[4].dataset.time) = dayjs().hour()){
+
+    hour1.classList.add("present")
+}
+else if (parseInt(document.querySelectorAll(".row")[4].dataset.time) > dayjs().hour()){
+
+    hour1.classList.add("future")
+}
+
+if (parseInt(document.querySelectorAll(".row")[5].dataset.time) < dayjs().hour()){
+
+    hour2.classList.add("past")
+}
+else if (parseInt(document.querySelectorAll(".row")[5].dataset.time) = dayjs().hour()){
+
+    hour2.classList.add("present")
+}
+else if (parseInt(document.querySelectorAll(".row")[5].dataset.time) > dayjs().hour()){
+
+    hour2.classList.add("future")
+}
+
+if (parseInt(document.querySelectorAll(".row")[6].dataset.time) < dayjs().hour()){
+
+    hour3.classList.add("past")
+}
+else if (parseInt(document.querySelectorAll(".row")[6].dataset.time) = dayjs().hour()){
+
+    hour3.classList.add("present")
+}
+else if (parseInt(document.querySelectorAll(".row")[6].dataset.time) > dayjs().hour()){
+
+    hour3.classList.add("future")
+}
+
+if (parseInt(document.querySelectorAll(".row")[7].dataset.time) < dayjs().hour()){
+
+    hour4.classList.add("past")
+}
+else if (parseInt(document.querySelectorAll(".row")[7].dataset.time) = dayjs().hour()){
+
+    hour4.classList.add("present")
+}
+else if (parseInt(document.querySelectorAll(".row")[7].dataset.time) > dayjs().hour()){
+
+    hour4.classList.add("future")
+}
+
+
+if (parseInt(document.querySelectorAll(".row")[8].dataset.time) < dayjs().hour()){
+
+    hour5.classList.add("past")
+}
+else if (parseInt(document.querySelectorAll(".row")[8].dataset.time) = dayjs().hour()){
+
+    hour5.classList.add("present")
+}
+else if (parseInt(document.querySelectorAll(".row")[8].dataset.time) > dayjs().hour()){
+
+    hour5.classList.add("future")
+}
 
 saveButton9.addEventListener ("click" , function(event){
     
